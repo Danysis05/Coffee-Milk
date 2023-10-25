@@ -1,0 +1,182 @@
+/* Establece una variable para el color principal */
+:root {
+    --main-color: #795548;
+    --secondary-color: #039db1;
+    --background-color: rgba(36, 2, 2, 0.825);
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #fff; /* Cambia el color de fondo según tus preferencias */
+}
+
+body a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Estilos del encabezado */
+header {
+    padding: 50px;
+    text-align: center;
+    background-image: url(imagenes/ivancito.jpeg);
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    min-height: 400px;
+}
+
+header h1 {
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+    margin-top: 250px; /* Ajusta la distancia desde la parte superior */
+    margin-left: 0px;
+    margin-right: 250px;
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: var(--secondary-color);
+}
+
+.logo img {
+    max-width: 300px;
+}
+
+/* Estilos de la sección "Quiénes somos" */
+#quienes-somos {
+    padding: 50px;
+    text-align: center;
+    background-color: #f5f5f5; /* Cambiado a un tono de gris claro */
+}
+
+#quienes-somos img {
+    filter: grayscale(1);
+    transition: filter 0.3s ease; /* Agregado: Transición suave para el efecto de desaturación */
+}
+
+#quienes-somos:hover img {
+    filter: grayscale(0);
+}
+
+#quienes-somos img {
+    filter: grayscale(0); /* Desactivado el efecto de desaturación */
+    max-width: 100%; /* Ajustado: Las imágenes ahora son responsivas */
+    margin: 0 auto; /* Agregado: Centra las imágenes horizontalmente */
+    border-radius: 10px; /* Agregado: Bordere redondeados para las imágenes */
+}
+
+#quienes-somos h2 {
+    color: #333; /* Cambiado a un tono de gris más oscuro */
+    font-size: 28px; /* Aumentado el tamaño de fuente */
+    margin-top: 20px;
+}
+
+#quienes-somos p {
+    color: #555; /* Cambiado a un tono de gris medio */
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6; /* Aumentado el espaciado entre líneas */
+}
+
+/* Estilos para el botón "Ver producto" */
+.boton-1 {
+    color: white;
+    background-color: #039db1; /* Cambiado a un tono de azul profundo */
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-1:hover {
+    background-color: #333; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilo para el video */
+#johan {
+    max-width: 100%;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #353131;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-social i {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    color: rgba(255, 254, 252, 0.954);
+    font-size: 40px;
+}
+
+.footer-social h3 {
+    color: white;
+}
+
+/* Estilos de la sección "EL MEJOR POSTRE DE CAFE" */
+#perra {
+    text-align: center;
+    color: white;
+    background-color: var(--main-color); /* Cambia el color de fondo según tus preferencias */
+    width: 100%;
+    padding: 20px 0; /* Agregado: Espaciado interior */
+}
+
+#perra i {
+    font-size: 24px; /* Ajusta el tamaño de los iconos */
+}
